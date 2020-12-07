@@ -1,0 +1,73 @@
+absl-py==0.9.0
+albumentations==0.5.2
+astor==0.8.0
+blinker==1.4
+brotlipy==0.7.0
+cachetools @ file:///tmp/build/80754af9/cachetools_1596822027882/work
+certifi==2020.6.20
+cffi==1.14.0
+chardet==3.0.4
+click==7.1.2
+cryptography==2.9.2
+cycler==0.10.0
+decorator==4.4.2
+gast==0.2.2
+google-auth @ file:///tmp/build/80754af9/google-auth_1596863485713/work
+google-auth-oauthlib==0.4.1
+google-pasta==0.2.0
+grpcio==1.27.2
+h5py==2.10.0
+idna @ file:///tmp/build/80754af9/idna_1593446292537/work
+imageio==2.9.0
+imgaug==0.4.0
+joblib @ file:///tmp/build/80754af9/joblib_1601912903842/work
+Keras-Applications @ file:///tmp/build/80754af9/keras-applications_1594366238411/work
+Keras-Preprocessing==1.1.0
+kiwisolver==1.3.1
+Markdown==3.1.1
+matplotlib==3.3.3
+mkl-fft==1.1.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+networkx==2.5
+numpy @ file:///C:/ci/numpy_and_numpy_base_1596233945180/work
+oauthlib==3.1.0
+olefile==0.46
+opencv-python==4.4.0.46
+opencv-python-headless==4.4.0.46
+opt-einsum==3.1.0
+pandas==1.1.4
+Pillow @ file:///C:/ci/pillow_1594298234712/work
+protobuf==3.12.3
+pyasn1==0.4.8
+pyasn1-modules==0.2.7
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+PyJWT==1.7.1
+pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
+pyparsing==2.4.7
+pyreadline==2.1
+PySocks @ file:///C:/ci/pysocks_1594394709107/work
+python-dateutil==2.8.1
+pytz==2020.4
+PyWavelets==1.1.1
+PyYAML==5.3.1
+requests @ file:///tmp/build/80754af9/requests_1592841827918/work
+requests-oauthlib==1.3.0
+rsa @ file:///tmp/build/80754af9/rsa_1596998415516/work
+scikit-image==0.17.2
+scikit-learn @ file:///C:/ci/scikit-learn_1598376983131/work
+scipy @ file:///C:/ci/scipy_1592916958183/work
+Shapely==1.7.1
+six==1.15.0
+tensorboard==2.2.1
+tensorboard-plugin-wit==1.6.0
+tensorflow==2.1.0
+tensorflow-estimator==2.1.0
+termcolor==1.1.0
+threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
+tifffile==2020.11.26
+urllib3==1.25.9
+Werkzeug==0.16.1
+win-inet-pton==1.1.0
+wincertstore==0.2
+wrapt==1.12.1
