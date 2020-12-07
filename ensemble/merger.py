@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from scipy.stats import mode, rankdata
+from scipy.stats import mode, rankdata, gmean
 
 class MergePredictions:
 	def __init__(self, ensemble_file, pred_cols):
@@ -26,6 +26,9 @@ class MergePredictions:
 	def mean_ensembling(self):
 		return np.mean(self.predictions, axis=0)
 
+	def geometric_mean_ensmbling(self):
+		return gmean(self.predictions, axis=0)
+
 	def max_ensembling(self):
 		return np.max(self.predictions, axis=0)
 
@@ -36,9 +39,16 @@ class MergePredictions:
 				preds.append(prediction)
 		return np.mean(preds, axis=0)
 
+	def weighted_geometric_mean_ensembling(self, weights):
+		preds = []
+		for weight, prediction in zip(weights, self.predictions):
+			for i in range(weight):
+				preds.append(prediction)
+		return gmean(preds, axis=0)
+
 	def rank_average_ensembling(self, mode="average"):
 		self.__check_rank_modes(mode)
-		predictions = rankdata(self.predictions, method=mode axis=2)
+		predictions = rankdata(self.predictions, method=mode, axis=1)
 		return np.mean(predictions, axis=0)
 
 	def weighted_rank_average_ensembling(self, weights, mode="average"):
@@ -47,7 +57,7 @@ class MergePredictions:
 		for weight, prediction in zip(weights, self.predictions):
 			for i in range(weight):
 				preds.append(prediction)
-		predictions = rankdata(preds, method=mode, axis=2)
+		predictions = rankdata(preds, method=mode, axis=1)
 		return np.mean(predictions, axis=0)
 
 	def voting_ensembling(self, voting="hard"):
